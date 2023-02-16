@@ -1,5 +1,5 @@
 :root{
-    --color:rgb(96, 216, 122);
+    --color:rgb(83, 226, 78);
 }
 *{
 
@@ -17,6 +17,7 @@ body {
 }
 section {
     text-align: center;
+    background: linear-gradient(rgb(29, 177, 61), var(--color));
 }
 .game--container {
     display: grid;
@@ -24,20 +25,33 @@ section {
     width: 306px;
     margin: 50px auto;
 }
+
+  
+  .cell:hover {
+    opacity: 1;
+    background: linear-gradient(rgb(29, 177, 61), var(--color));
+    color: rgb(62, 219, 88);
+  }
 .cell {
     font-family: "Permanent Marker", cursive;
     width: 100px;
     height: 100px;
-    box-shadow: 0 0 0 1px #c43131;
-    border: 1px solid #c73131;
-    cursor: pointer;
-line-height: 100px;
     font-size: 60px;
+    box-shadow: 0 .3rem .5rem  rgb(32, 145, 75);
+    border: 1px solid #42c731cc;
+    color: #fff;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .game--restart {
-    margin-top:6rem;
+    margin-top:2rem;
+    margin-bottom: 4rem;
     height: 6rem;
     width: 15rem;
     background:rgb(27, 153, 65);
@@ -57,6 +71,6 @@ line-height: 100px;
   .game--restart:hover {
     opacity: 1;
     background: linear-gradient(rgb(29, 177, 61), var(--color));
-    color: rgb(38, 38, 112);
+    color: rgb(62, 219, 88);
     
   }
