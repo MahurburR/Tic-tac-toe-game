@@ -61,6 +61,8 @@ section {
     cursor: pointer;
     outline: none;
     display: inline-block;
+    align-items: center;
+    justify-content: center;
     font-size: 2rem;
     font-weight: bold;
     opacity: 0.8;
